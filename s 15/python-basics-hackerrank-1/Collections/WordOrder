@@ -1,0 +1,7 @@
+from collections import Counter, OrderedDict
+n=int(input())
+class OrderedCounter(Counter, OrderedDict):
+    pass
+d = OrderedCounter(input() for i in range(n))
+print(len(d))
+print(*d.values())

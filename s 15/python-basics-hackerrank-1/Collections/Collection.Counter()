@@ -1,0 +1,10 @@
+total = 0
+a = int(input())
+length = list(map(int,input().split()))
+N = int(input())
+for i in range(0,N):
+    a,b = list(map(int,input().split()))
+    if a in length:
+        total =total+b
+        length.remove(a)
+print(total)

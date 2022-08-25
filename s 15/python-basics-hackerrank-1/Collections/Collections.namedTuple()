@@ -1,0 +1,8 @@
+from collections import namedtuple
+sum=0
+n =int(input())
+columns=input().split().index("MARKS")
+datavalue=[input().split() for i in range(0,n)]
+for j in datavalue:
+    sum+=int(j[columns])
+print("{:.2f}".format(sum/n))

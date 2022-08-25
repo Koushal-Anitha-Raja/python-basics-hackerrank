@@ -1,0 +1,16 @@
+if __name__ == '__main__':
+    students=[]
+    scores=[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        scores.append(score)
+        students.append([name,score])
+    count = scores.count(min(scores))
+    for i in range(count):
+        scores.remove(min(scores))
+    students.sort()    
+    sec_Highest = min(scores)
+    output = [x for x in students if x[1] == sec_Highest ]
+    for i in output:
+        print(i[0])

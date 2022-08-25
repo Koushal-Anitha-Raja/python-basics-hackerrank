@@ -1,0 +1,5 @@
+from collections import Counter
+S = sorted(str(input()))
+occurence = Counter(S)
+for i,j in occurence.most_common(3):
+    print(i,j)

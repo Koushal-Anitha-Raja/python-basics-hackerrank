@@ -1,0 +1,11 @@
+from collections import defaultdict
+d = defaultdict(list)
+n, m = list(map(int, input().split()))
+for i in range(1, n+1):
+    d[input()].append(i)
+for i in range(m):
+    value = str(input())
+    if value in d:
+        print(*d[value])
+    else:
+        print(-1)
